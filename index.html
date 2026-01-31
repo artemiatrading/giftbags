@@ -1,76 +1,145 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Olla — Gift Bag Services</title>
+
+    <title>Artémia — Gift Bag Services</title>
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <main>
-      <h1>Olla</h1>
+    <!-- ================= HEADER / HERO ================= -->
+    <header class="hero">
+      <div class="container hero__content">
+        <h1 class="hero__title">Artémia Gift Bags</h1>
 
-      <p>
-        Custom and ready-made gift bags for events, corporate branding,
-        and retail packaging.
-      </p>
-
-      <section>
-        <h2>What we do</h2>
-        <p>
-          Olla designs and supplies quality gift bags for events, businesses,
-          and retail use. We offer both ready-made and custom-branded gift
-          bags, available in selected colors and sizes. We support small
-          and bulk orders with a focus on quality and reliability.
+        <p class="hero__subtitle">
+          Sacs cadeaux élégants, disponibles avec ou sans personnalisation, pour
+          tous vos besoins professionnels et événementiels.
         </p>
+
+        <div class="hero__actions">
+          <a
+            href="https://drive.google.com/file/d/1ePn3UIyNvkCzj2UOybDu3lqKfso9UTni/view?usp=drive_link"
+            target="_blank"
+            rel="noopener"
+            class="btn btn--primary"
+          >
+            Voir le catalogue
+          </a>
+
+          <a href="#contact" class="btn btn--secondary"> Nous contacter </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="container">
+      <!-- ================= PRODUCTS ================= -->
+      <section class="products">
+        <header class="section-header">
+          <h2 class="section-title">Nos sacs cadeaux</h2>
+          <p class="section-subtitle">
+            Disponibles en plusieurs tailles et couleurs neutres.
+            Personnalisation possible.
+          </p>
+        </header>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-card__image">
+              <img
+                src="images/bag-white.jpg"
+                alt="Sac cadeau blanc de petite taille"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__title">Sac cadeau blanc</h3>
+              <p class="product-card__meta">Petit · Moyen · Grand</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__image">
+              <img
+                src="/images/bag-beige.png"
+                alt="Sac cadeau beige très clair"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__title">Sac cadeau beige très clair</h3>
+              <p class="product-card__meta">Petit · Moyen · Grand</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__image">
+              <img
+                src="/images/bag-brown.png"
+                alt="Sac cadeau brun"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__title">Sac cadeau brun</h3>
+              <p class="product-card__meta">Petit · Moyen · Grand</p>
+            </div>
+          </article>
+        </div>
       </section>
 
-      <section>
-        <h2>Our gift bag services</h2>
+      <!-- ================= USE CASES ================= -->
+      <section class="features">
+        <header class="section-header">
+          <h2 class="section-title">Idéal pour</h2>
+        </header>
 
-        <h3>Gift bag designs</h3>
-        <ul>
-          <li>White gift bags</li>
-          <li>Very light beige gift bags</li>
-          <li>Beige gift bags</li>
-        </ul>
-
-        <h3>Customization</h3>
-        <ul>
-          <li>Custom branding and logo printing</li>
-          <li>Size and format options</li>
-        </ul>
-
-        <h3>Use cases</h3>
-        <ul>
-          <li>Corporate gifting</li>
-          <li>Events and celebrations</li>
-          <li>Retail packaging</li>
-          <li>Promotional giveaways</li>
-        </ul>
-
-        <h3>Orders</h3>
-        <ul>
-          <li>Small orders</li>
-          <li>Bulk orders</li>
+        <ul class="features__list">
+          <li class="features__item">Cadeaux d’entreprise</li>
+          <li class="features__item">Événements et célébrations</li>
+          <li class="features__item">Emballage de vente au détail</li>
+          <li class="features__item">Cadeaux promotionnels</li>
         </ul>
       </section>
 
-      <section>
-        <h2>Resources</h2>
-        <p>
-          <strong>Gift Bag Services & Catalogue (PDF)</strong><br />
-          (Link will be added soon)
-        </p>
-      </section>
+      <!-- ================= CONTACT ================= -->
+      <section id="contact" class="contact">
+        <header class="section-header">
+          <h2 class="section-title">Contact</h2>
+        </header>
 
-      <section>
-        <h2>Contact</h2>
-        <p>
-          Phone / WhatsApp<br />
-          Email
-        </p>
+        <address class="contact__details">
+          <p>
+            <strong>WhatsApp :</strong><br />
+            <a href="https://wa.me/254705156908">+254 705 156 908</a> /
+            <a href="https://wa.me/243972169659">+243 972 169 659</a>
+          </p>
+
+          <p>
+            <strong>Email :</strong><br />
+            <a href="mailto:Artémiatrading2022@gmail.com">
+              Artémiatrading2022@gmail.com
+            </a>
+          </p>
+        </address>
       </section>
     </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="container footer__content">
+        <p>© <span id="year"></span> Artémia — Gift Bag Services</p>
+      </div>
+    </footer>
+
+    <!-- Optional JS for dynamic year -->
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
